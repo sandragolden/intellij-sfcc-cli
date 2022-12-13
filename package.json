@@ -1,0 +1,20 @@
+{
+  "name": "jb-sfcc-cred-cli",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "jb-sfcc-cred-cli": "./cli.js"
+  },
+  "main": "helper.js",
+  "scripts": {
+    "decrypt": "node cli.js decrypt",
+    "encrypt": "node cli.js encrypt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.4.1",
+    "dotenv": "^16.0.3"
+  }
+}
