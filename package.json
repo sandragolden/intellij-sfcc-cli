@@ -2,19 +2,25 @@
   "name": "jb-sfcc-cred-cli",
   "version": "1.0.0",
   "description": "",
+  "author": "Sandra Golden <sgolden@salesforce.com>",
+  "contributors": [
+    "Charles Lavery <clavery@salesforce.com>"
+  ],
   "bin": {
     "jb-sfcc-cred-cli": "./cli.js"
   },
   "main": "helper.js",
   "scripts": {
     "decrypt": "node cli.js decrypt",
-    "encrypt": "node cli.js encrypt"
+    "encrypt": "node cli.js encrypt",
+    "lint": "eslint --ext .js ."
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "commander": "^9.4.1",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb-base": "^15.0.0"
   }
 }
