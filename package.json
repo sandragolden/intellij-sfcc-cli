@@ -1,5 +1,5 @@
 {
-  "name": "jb-sfcc-cred-cli",
+  "name": "intellij-sfcc-cli",
   "version": "1.0.0",
   "description": "",
   "author": "Sandra Golden <sgolden@salesforce.com>",
@@ -7,7 +7,7 @@
     "Charles Lavery <clavery@salesforce.com>"
   ],
   "bin": {
-    "jb-sfcc-cred-cli": "./cli.js"
+    "intellij-sfcc-cli": "./cli.js"
   },
   "main": "helper.js",
   "scripts": {

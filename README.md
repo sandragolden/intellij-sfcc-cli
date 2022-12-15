@@ -1,4 +1,4 @@
-# jb-sfcc-cred-cli
+# intellij-sfcc-cli
 
 # Introduction
 
@@ -6,7 +6,7 @@ This is a CLI tool that helps you to encrypt and decrypt the [IntelliJ SFCC](htt
 
 # How to
 
-You can run the `npm link` command before using this tool. This will allow you to directly run the `jb-sfcc-cred-cli` command in your command line directly.
+You can run the `npm link` command before using this tool. This will allow you to directly run the `intellij-sfcc-cli` command in your command line directly.
 
 ```bash
 yarn install
@@ -19,10 +19,10 @@ npm link
 yarn decrypt -s "~/intellij-sfcc-credentials.creds" -t "~/intellij-sfcc-credentials.json" -k "12345--2210b196f067f24-7"
 
 # after an npm link
-jb-sfcc-cred-cli decrypt -s "~/intellij-sfcc-credentials.creds" -t "~/intellij-sfcc-credentials.json" -k "12345--2210b196f067f24-7"
+intellij-sfcc-cli decrypt -s "~/intellij-sfcc-credentials.creds" -t "~/intellij-sfcc-credentials.json" -k "12345--2210b196f067f24-7"
 
 # return access keys for a particular host
-jb-sfcc-cred-cli decrypt -h abcd-001 -u user@salesforce.com
+intellij-sfcc-cli decrypt -h abcd-001 -u user@salesforce.com
 ```
 
 ## Encrypt JSON File to Credentials File
@@ -32,12 +32,12 @@ jb-sfcc-cred-cli decrypt -h abcd-001 -u user@salesforce.com
 yarn encrypt -s "~/intellij-sfcc-credentials.json" -t "~/intellij-sfcc-credentials.creds" -k "12345--2210b196f067f24-7"
 
 # after an npm link
-jb-sfcc-cred-cli encrypt -s "~/intellij-sfcc-credentials.json" -t "~/intellij-sfcc-credentials.creds" -k "12345--2210b196f067f24-7"
+intellij-sfcc-cli encrypt -s "~/intellij-sfcc-credentials.json" -t "~/intellij-sfcc-credentials.creds" -k "12345--2210b196f067f24-7"
 ```
 
 ## Commands ##
 
-Use `jb-sfcc-cred-cli --help` or just `jb-sfcc-cred-cli` to get started and see the full list of commands available:
+Use `intellij-sfcc-cli --help` or just `intellij-sfcc-cli` to get started and see the full list of commands available:
 
 ```bash
     Usage: jb-sfcc-cred-cli [options] [command]
