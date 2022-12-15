@@ -23,6 +23,12 @@ intellij-sfcc-cli decrypt -s "~/intellij-sfcc-credentials.creds" -t "~/intellij-
 
 # return access keys for a particular host
 intellij-sfcc-cli decrypt -h abcd-001 -u user@salesforce.com
+
+# using environment variables
+intellij-sfcc-cli decrypt
+
+# return access keys for a particular host using environment variables
+intellij-sfcc-cli decrypt -h abcd-001
 ```
 
 ## Encrypt JSON File to Credentials File
@@ -33,6 +39,9 @@ yarn encrypt -s "~/intellij-sfcc-credentials.json" -t "~/intellij-sfcc-credentia
 
 # after an npm link
 intellij-sfcc-cli encrypt -s "~/intellij-sfcc-credentials.json" -t "~/intellij-sfcc-credentials.creds" -k "12345--2210b196f067f24-7"
+
+# using environment variables
+intellij-sfcc-cli encrypt
 ```
 
 ## Commands ##
@@ -57,4 +66,13 @@ Use `intellij-sfcc-cli --help` or just `intellij-sfcc-cli` to get started and se
     SFCC_INTELLIJ_JSON_FILE                  set path for `intellij-sfcc-credentials.json` file (decrypted file)
     SFCC_INTELLIJ_CREDENTIALS_KEY            secret key used to decrypt/encrypt credentials file
     SFCC_USERNAME                            SFCC user name/email address
+```
+
+## Environment Variables Sample ##
+Rename `sample.env` to `.env` or use global environment variables
+```
+SFCC_INTELLIJ_CREDENTIALS_FILE=~/intellij-sfcc-credentials.creds
+SFCC_INTELLIJ_JSON_FILE=~/intellij-sfcc-credentials.json
+SFCC_INTELLIJ_CREDENTIALS_KEY=12345--2210b196f067f24-7
+SFCC_USERNAME=user@salesforce.com
 ```
