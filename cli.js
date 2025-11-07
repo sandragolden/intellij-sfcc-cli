@@ -47,7 +47,7 @@ program.command('decrypt')
  * @param {String} encrypt The command name
  */
 program.command('encrypt')
-    .description('encrypts intellij-sfcc-credentials.creds file')
+    .description('encrypts intellij-sfcc-credentials.json file')
     .option('-s, --source <key>', 'The SFCC json file.')
     .option('-t, --target <key>', 'Path to intellij-sfcc-credentials.json file.')
     .option('-k, --key <key>', 'The secret key to encrypt the file.')
