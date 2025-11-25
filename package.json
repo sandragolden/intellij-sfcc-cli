@@ -6,9 +6,7 @@
   "contributors": [
     "Charles Lavery <clavery@salesforce.com>"
   ],
-  "bin": {
-    "intellij-sfcc-cli": "./cli.js"
-  },
+  "bin": "./cli.js",
   "main": "helper.js",
   "scripts": {
     "decrypt": "node cli.js decrypt",
@@ -17,6 +15,7 @@
   },
   "keywords": [],
   "license": "ISC",
+  "packageManager": "yarn@4.12.0",
   "dependencies": {
     "commander": "^9.4.1",
     "dotenv": "^16.0.3",
